@@ -41,18 +41,15 @@ function App() {
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
-            
             {/* Farmer Routes */}
             <Route path="/price-comparison" element={<PriceComparison />} />
             <Route path="/msp-information" element={<MSPInformation />} />
             <Route path="/procurement-centers" element={<ProcurementCenters />} />
-            <Route path="/selling-deadlines" element={<SellingDeadlines />} />
-            
+            <Route path="/selling-deadlines" element={<SellingDeadlines />} />    
             {/* Shopkeeper Routes */}
             <Route path="/shopkeeper" element={<ShopkeeperDashboard />} />
             <Route path="/shopkeeper/add-shop" element={<AddShop />} />
             <Route path="/shopkeeper/manage-crops" element={<ManageCrops />} />
-            
             {/* Common Routes */}
             <Route path="/account" element={<UserAccount />} />
             <Route path="/admin" element={<AdminDashboard />} />
